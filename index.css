@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400..800;1,400..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-base: #F7F5F0;
+  --color-surface: #FFFFFF;
+  --color-ink: #1C2321;
+  --color-blue: #3D6B9E;
+  --color-sage: #5E8C5A;
+  --color-orange: #D96C3F;
+  --color-red: #C43D3D;
+  --color-clay: #C97D60;
+  --color-line: #DDD8CC;
+  
+  --font-serif: "Playfair Display", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  
+  --text-h1: 4.5rem;
+  --text-h1-lh: 1.1;
+  
+  --text-h2: 3.5rem;
+  --text-h2-lh: 1.15;
+  
+  --text-h3: 2.5rem;
+  --text-h3-lh: 1.2;
+  
+  --text-body: 1.125rem;
+  --text-body-lh: 1.6;
+  
+  --text-caption: 0.875rem;
+  --text-caption-lh: 1.5;
+}
+
+/* 
+  Typography Choice Justification:
+  For the "confident engineering studio / agency-tier polish" feel, I chose Playfair Display (editorial serif) paired with Inter (humanist/neutral sans). 
+  Playfair Display brings an undeniable sense of established authority, craftsmanship, and premium editorial quality that breaks away from typical flat "tech" designs.
+  Inter balances this by providing crisp, hyper-legible utility for body copy and technical UI elements, reinforcing the "engineering" aspect without competing with the headline serif.
+*/
+
+@layer base {
+  body {
+    background-color: var(--color-base);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: var(--text-body);
+    line-height: var(--text-body-lh);
+  }
+}
